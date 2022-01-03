@@ -1,0 +1,39 @@
+{
+  "name": "backend-server",
+  "version": "1.0.0",
+  "description": "Backend Node.js Server",
+  "main": "server.js",
+  "engines": {
+    "node": "v14.17.0",
+    "npm": "6.14.13"
+  },
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aos": "^2.3.4",
+    "axios": "^0.24.0",
+    "bootstrap": "^5.1.3",
+    "concurrently": "^7.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.12",
+    "nodemon": "^2.0.14",
+    "react": "^17.0.2",
+    "react-redux": "^7.2.6",
+    "react-router": "^6.0.2",
+    "react-router-dom": "^5.3.0",
+    "react-stripe-checkout": "^2.6.3",
+    "redux": "^4.1.2",
+    "redux-devtools-extension": "^2.13.9",
+    "redux-thunk": "^2.4.0",
+    "router": "^1.3.5",
+    "stripe": "^8.194.0",
+    "uuid": "^8.3.2"
+  }
+}
